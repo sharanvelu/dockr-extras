@@ -8,7 +8,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 VERSION=${VERSION:-18.10.0}
 
 nvm install "${VERSION}" | bash
-#nvm install node
 npm install -g npm@latest
 
 ln -s /root/.nvm/versions/node/v${VERSION}/bin/node /usr/local/bin/node
