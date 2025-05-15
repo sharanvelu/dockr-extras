@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Create composer version directory
-mkdir /usr/local/dockr/composer
+mkdir -p /usr/local/dockr/composer
 
 # Download and store composer installer locally
 curl -sS https://getcomposer.org/installer >> /usr/local/dockr/composer/installer
